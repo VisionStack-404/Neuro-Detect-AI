@@ -1,0 +1,6 @@
+{
+  "name": "Dementia Detection Hybrid Model",
+  "description": "Visualizing a proposed two-branch hybrid multi-modal deep learning architecture (MRI + Speech) for early dementia detection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
