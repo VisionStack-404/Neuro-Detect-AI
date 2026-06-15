@@ -28,9 +28,9 @@ class DementiaMultimodalDataset(Dataset):
     def __getitem__(self, idx):
         row = self.metadata.iloc[idx]
         
-        # 1. Load the dataset for Branch 1 (OASIS / ADNI MRI)
+        
         mri_path = os.path.join(self.mri_dir, row['mri_filename'])
-        # Load 2D/3D MRI slide (converting to RGB for ResNet compatibility here)
+    
         mri_image = Image.open(mri_path).convert('RGB')
         
         if self.transform:
