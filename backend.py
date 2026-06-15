@@ -151,7 +151,6 @@ if __name__ == "__main__":
     # Assuming MFCC features have 40 coefficients per frame
     model = MultimodalDementiaModel(tabular_input_dim=40, lstm_hidden_dim=256, num_classes=3)
     
-    # --- 5. Evaluation / Accuracy Calculation Loop (Example) ---
     def calculate_accuracy(model, data_loader, device='cpu'):
         model.eval()
         correct = 0
