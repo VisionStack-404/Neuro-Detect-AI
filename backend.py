@@ -78,7 +78,7 @@ class MultimodalDementiaModel(nn.Module):
             nn.Softmax(dim=1)
         )
         
-        # --- Classification Layer ---
+        
         self.classifier = nn.Sequential(
             nn.Linear(fusion_dim, 256),
             nn.ReLU(),
